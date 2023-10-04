@@ -19,6 +19,15 @@ public class InterpretDrawingFile {
 		chooser.showOpenDialog(null);
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
-		
+		String shape = in.next();
+		int red = in.nextInt();
+	    int green = in.nextInt();
+	    int blue = in.nextInt();
+	    Boolean filled = in.nextBoolean();
+	    double parameterOne = in.nextDouble();
+	    double parameterTwo = in.nextDouble();
+	    double parameterThree = in.nextDouble();
+	    double parameterFour = in.nextDouble();
+	    StdDraw.rectangle(parameterOne, parameterTwo, parameterThree, parameterFour);
 	}
 }
